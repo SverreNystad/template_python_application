@@ -71,7 +71,7 @@ cd PROJECT NAME
 pip install -r requirements.txt
 ```
 
-1. Create a file called `.env` in the root directory of the project. Add the following lines to the file:
+4. Create a file called `.env` in the root directory of the project. Add the following lines to the file:
 ```bash
 touch .env
 echo "SECRET=SECRET_VALUE" > .env # Remember to change SECRET_VALUE to your actual key

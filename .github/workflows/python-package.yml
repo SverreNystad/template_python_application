@@ -35,12 +35,24 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest and generate coverage
+    - name: Test with pytest 
       run: |
         pytest -m "not apitest" --cov
+    - name: Generate coverage report
+      run: |
         coverage xml
   
+    - name: Check if CODECOV_TOKEN exists
+      id: check-secret
+      run: |
+        if [[ -n "${{ secrets.CODECOV_TOKEN }}" ]]; then
+          echo "::set-output name=exists::true"
+        else
+          echo "::set-output name=exists::false"
+        fi
+  
     - name: Upload coverage reports to Codecov
+      if: steps.check-secret.outputs.exists == 'true'
       uses: codecov/codecov-action@v3
       with:
           token: ${{ secrets.CODECOV_TOKEN }}

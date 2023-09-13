@@ -88,7 +88,6 @@ If you do not want to run api tests, run the following command instead:
 pytest -m "not apitest" --cov
 ```
 
-
 ### License
-The license is not yet decided. Check back later for updates.
+Licensed under the [MIT License](LICENSE). Because this is a template repository, you need to change the license if you want to use it for your own project.
 

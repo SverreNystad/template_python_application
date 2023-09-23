@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/USERNAME/REPONAME/build_and_test.yml)
+![Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/USERNAME/REPONAME/python-package.yml)
 [![codecov.io](https://codecov.io/github/USERNAME/REPONAME/coverage.svg?branch=main)](https://codecov.io/github/USERNAME/REPONAME?branch=main)
-![GPT-dungeon-master top language](https://img.shields.io/github/languages/top/USERNAME/REPONAME)
+![top language](https://img.shields.io/github/languages/top/USERNAME/REPONAME)
 ![GitHub language count](https://img.shields.io/github/languages/count/USERNAME/REPONAME)
 [![Project Version](https://img.shields.io/badge/version-0.0.1-blue)](https://img.shields.io/badge/version-0.0.1-blue)
 
@@ -54,15 +54,19 @@ To install the PROJECT NAME, one needs to have all the prerequisites installed a
 git clone https://github.com/USERNAME/REPONAME.git
 cd PROJECT NAME
 ```
-2. Create a virtual environment
-    #### On Windows:
+2. Create and run a virtual environment.
+
+    Create the virtual by running the following command.
     ```bash
     python3 -m venv venv
+    ```
+    To use the virtual environment run the following command
+    #### On Windows:
+    ```bash
     source venv/Scripts/activate
     ```
     #### On macOS and Linux: 
     ```bash
-    python3 -m venv venv
     source venv/bin/activate
     ```
 

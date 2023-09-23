@@ -54,11 +54,11 @@ To install the PROJECT NAME, one needs to have all the prerequisites installed a
 git clone https://github.com/USERNAME/REPONAME.git
 cd PROJECT NAME
 ```
-2. Create and run a virtual environment.
+2. Create and run a virtual environment (optional but recommended).
 
     Create the virtual by running the following command.
     ```bash
-    python3 -m venv venv
+    python -m venv venv
     ```
     To use the virtual environment run the following command
     #### On Windows:

@@ -1,5 +1,5 @@
-"""Test the main module."""
-from src.main import hello_world
+"""Test the basic module."""
+from src.basic_module import hello_world
 
 def test_hello_world():
     """Test the hello_world function."""

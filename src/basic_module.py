@@ -1,4 +1,4 @@
-""" The main entrypoint for the application. """
+""" A module for the application """
 import logging
 
 # Set up logging
